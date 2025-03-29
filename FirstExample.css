@@ -1,0 +1,311 @@
+
+:root{
+  --pink:#e84393;
+
+} 
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+  }
+
+  html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem ;
+    overflow-x: hidden;
+  }
+
+  section{
+      padding: 20rem 9%;
+   
+      
+    }
+
+  header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background:#fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.1);
+  }
+
+  header .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+  }
+
+  header .logo span{
+    color: rgb(255, 217, 0);
+  }
+
+  header .navbar a{
+    font-size: 1.5rem;
+    color: black;
+    padding: 0 1.5rem;
+    
+    
+  }
+
+  header .navbar a:hover{
+    color: gold;
+  }
+
+
+   .iconsnav a{
+    font-size: 1.5rem;
+    color: black;
+    padding: 0 0.5rem;
+  }
+
+  .iconsnav a:hover{
+    color: gold;
+  }
+
+  header #toggler{
+    display: none;
+  }
+
+  header .fa-bars{
+    font-size: 2rem;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    display: none;
+  }
+
+
+
+   /* media queries */
+
+   
+    
+      
+    @media (max-width:991px){
+
+      html{
+        font-size: 55%;
+        
+      }
+
+      header{
+        padding: 2rem;
+      }
+    }
+
+    @media (max-width:768px){
+
+      header .fa-bars{
+        display: block;
+      }
+
+      header .navbar{
+        position: absolute;
+        top: 100%; left:0;right:0;
+        background: rgb(238, 232, 232);
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100%  0, 100% 0, 0 0);
+      } 
+
+      header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+
+    header .navbar a{
+      margin: 1.5rem;
+      padding: 1.5rem;
+      background: #fff;
+      border: 1rem solid rgba(0, 0, 0, .1);
+      display: block;
+    }
+    }
+
+    
+
+    .home{
+      display: flex;
+      align-items: center;
+      min-width: 100%;
+      background: url(https://wallpaperaccess.com/full/6657349.jpg);
+      background-size: cover;
+      background-position: center;
+
+    }
+
+    .home .contant{
+      max-width: 50rem;
+    }
+
+    .home .contant h3{
+      font-size: 5rem;
+      color: gold;
+      font-family: Roboto;
+    }
+
+    .home .contant span{
+      color: white;
+      font-family: Roboto;
+      font-size: 2rem;
+    }
+
+    .home .contant p{
+      color: white;
+      font-family: Roboto;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+   
+
+    .home .contant a{
+    color: #333;
+    background-color: gold;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    }
+
+    .home .contant a:hover{
+      color: white;
+    }
+
+
+    #explore{
+      background-color: transparent;
+      color: #ffffff;
+      border: solid 1px rgb(235, 230, 230);
+      font-size: 1rem;
+      padding: 9px;
+      margin: 8px;
+    }
+
+    #explore:hover{
+      color: black;
+    }
+    
+
+    .conainer{
+      text-align: center;
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+      display: inline;
+    }
+
+   .conainer .par-section{
+    margin: 2.5rem;
+    
+   }
+
+   .conainer .par-section span{
+    color: gold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   .par-section p{
+    font-size: 10px;
+    padding: 0.5rem;
+   }
+  
+   
+
+   .containet-products img{
+    cursor: pointer;
+   }
+
+   .card{
+    background: #fff;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+           
+            
+   }
+
+
+   
+   
+
+   .containet-products h2{
+    font-size: 1.5rem;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+
+   }
+
+   .containet-products p{
+    color: rgb(213, 183, 14);
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
+  .containet-products button{
+    font-size: 1.2rem;
+    width: 150px;
+    background-color:rgb(213, 183, 14 );
+    color: white;
+    font-family: "Urbanist", sans-serif;
+    padding: 7px; margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+   
+  }
+
+
+
+
+  
+ .servise{
+  background-color: gold;
+  text-align: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.3rem;
+  padding: 50px;
+  margin: 0px;
+ }
+
+ .servise h2{
+  padding: 10px;
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+ }
+
+ .servise p{
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ 
+ .servise-img img{
+ align-items: center;
+ }
+  
+
+   
+
+   
+
+     
+     
+
+    
+
+  
+  
+   
+    
